@@ -1,0 +1,29 @@
+header{
+  background: url(../img/potadaboring2.jpg);
+  background-size: cover; /*Cubrir todo el contenedor*/
+  background-position: center;
+  min-height: 710px;
+}
+@media screen and (max-width: 670px){ /* cambiar cuando screen sea de 670 px de ancho o menos*/
+  header{
+    min-height: 500px;
+  }
+}
+
+.section{
+  padding-top: 4vw; /*relleno(espacio entre el borde y su contenido del elemento) del 4% relativo al ancho ventana (Viewport Width) */
+  padding-bottom: 4vw;
+}
+
+/*margin(espacio alrededor del elmento)*/
+/*padding(espacio dentro del elmento)*/
+
+.tabs .indicator{
+  background-color: #1a237e;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+  background: transparent;
+}
+
+/*#0ba59b  verde melon*/

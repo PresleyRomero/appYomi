@@ -1,0 +1,84 @@
+/*************************************** ESTILOS PARA USUARIO ADMIN ************************************/
+
+
+.main-admin {
+    padding-left: 300px;
+} 
+
+	/*------------------------------- d_configx -------------------------------------*/
+
+#tblciclos td , #tblnulls td, #tblends td{
+	border: 1px solid;
+	border-color: #757575;
+}
+
+#form-newpass .row{
+   	margin-bottom: 2px; 
+}
+
+.fixed-action-btn{
+    bottom: 29.5em;/* !important;*/
+    margin-top: 8px !important;
+}
+
+.fixed-action-btn-rb{ /*rb: right-bottom*/    
+    right: 0.5em;
+    bottom: 0.8em;
+}
+
+.btn-estado{
+    width: 5.4em;
+    font-weight: bold;
+    background-color: #eaeaea;
+}
+
+#txtinit , #txtend{
+    resize: vertical;
+    min-height: 80px;
+    max-height: 100px;    
+}
+
+#txtend{
+    color: black;
+    font-weight: bold;
+}
+
+#txtinit{
+    color: #333333;
+}
+
+#form-dp :disabled, #form-dtu :disabled{
+    color: #333333;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-medium {
+        width: 70%;
+    }
+    .modal-medium h4{
+        font-variant: petite-caps;
+    }
+    #txtinit , #txtend{
+       resize: vertical;
+        min-height: 150px;
+        max-height: 200px;
+    }
+    #main-admin {
+        padding-left: 0;
+    } 
+}
+
+#fileimg{
+    background: #d02929;
+    color: white;
+    border: 3px solid;
+    border-color: yellow;
+}
+
+#fileimg:hover{
+    cursor:pointer;      
+}
+
+#btnregistrar{
+    width: 100%;
+}

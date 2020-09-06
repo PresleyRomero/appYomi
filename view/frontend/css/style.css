@@ -1,0 +1,282 @@
+
+body{
+    margin: 0;
+}
+
+.formulario{
+ width: 100%;
+ height: 100vh;
+ background-color: #8bc34a;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.login{
+    background-color: green;
+    padding: 1em;
+}
+.formulario h1{
+    padding: 0;
+}
+
+main .container {
+    padding: 0.5rem;
+    max-width: 100% !important;
+    width: 98%;
+}
+
+main .container h4{
+   margin-top: 0px;
+}
+
+
+div ul li .link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main{
+    height: 100vh;
+}
+
+nav .logo{
+	color: red;
+	width: 300px;
+	padding-left: 300px;
+}
+
+div .avatar-status{
+    position: relative;
+    display: inline-block;
+    line-height: 40px;
+    width: 40px;
+    white-space: nowrap;
+    border-radius: 1000px;
+    vertical-align: bottom;
+}
+
+div .avatar-status img{
+	background: red;
+	width: 100%;
+  max-width: 100%;
+  height: auto;
+  background: #e6e6e6;
+  border: 0 none;
+  border-radius: 1000px;
+}
+
+main {
+      padding-left: 0;
+     } 
+
+@media only screen and (max-width: 992px) {
+     header, main , footer {
+         padding-left: 0;
+     }
+     main{
+      height: 100%;
+     }
+  
+}
+
+/****************** ROMERO ***********************/
+.vertical-line{  
+  height: 75%; 
+  width: 1px; 
+  margin-right:25%; 
+  display: inline-block; 
+  position: absolute; 
+}
+
+.perfil{
+  background: white;
+}
+
+.modal-medium{
+  width: 35%; 
+}
+
+.form-tight .row{
+  margin-bottom: 2px; 
+}
+
+.table-tight td{
+  padding: 5px 12px;
+}
+
+.sticky-dialog{
+  height: 35% !important;
+  width: 36%;
+}
+
+.sticky-success{
+  width: 18%;
+}
+
+.sticky-success img{
+  width: 100%;
+}
+
+.sticky-success span{
+  font-weight: bold;
+}
+
+.row-search{
+  display: flex;
+  width: 50%;
+  margin-bottom: 2em;
+  position: relative;
+  padding-left: 10px;
+}
+
+.row-search button{
+  background: none;
+  outline: none;
+  border:0;
+  position: absolute;
+  margin-left: 92%;
+  margin-top: 0.8em;
+}
+
+.row-search button:hover{
+  cursor:pointer;  
+}
+
+td button {
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}
+
+td button .material-icons{
+  font-size: 1.8rem;
+}
+
+.table-bordered td{
+  border: 1px solid;
+  border-color: #949494;
+}
+
+.td-item{
+  background-color: #d7d7d7;
+}
+
+.row-title-icon{
+  display: flex;
+  justify-content: space-around;  
+}
+
+.row-title-icon button{
+  align-self: center;  
+}
+
+.div-input-search{
+  display: flex;  
+}
+
+.div-input-search button{
+  margin-bottom: 0.55em;
+  margin-top: 0.5em;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;  
+  background: none;
+}
+
+.div-input-search button{
+  cursor: pointer;
+}
+
+.foot-note p{
+  font: -webkit-control;
+  color: red;
+  text-align: justify;
+}
+
+.tabs .atab .material-icons{
+  margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 700px) {
+     .sticky-success {
+        width: 70%;
+     }
+     .row-search{
+        display: flex;
+        width: 100%;
+     }
+     .row-search button{
+        margin-left: 89%;
+     }     
+     .modal-medium{
+        width: 80%; 
+     }
+}
+
+
+.card-reveal{
+  padding: 0 !important;
+}
+.card-reveal .card-title{
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.card-reveal ul{
+  overflow: hidden;
+}
+
+.card{
+  height: 22em;
+}
+
+.card .card-image{
+  height: 13.5em;
+}
+
+.card .card-image{
+  height: 13.5em;
+}
+
+.card .card-image img{
+  height: 100%;
+}
+
+.div-enmarcado{
+  /*margin-right: 1em;
+  margin-left: 1em;*/
+  border: 1px solid;
+}
+
+.btns-flex{
+  display: flex !important;
+  justify-content: space-around;
+}
+
+.div-flex{
+  display: flex !important;
+}
+
+.div-flex > span{
+  margin-top: -0.8em;
+}
+
+.div-flex .select-wrapper{
+  margin-top: -1em;
+  margin-left: 2em;
+}
+
+.card .card-title{
+  font-size: 18px;
+  font-weight: 450;
+}
+
+
+/******************* EXCEPCION :D **************************************/
+
+.licategoria .select-wrapper{
+  margin-top: 0.6em;
+  margin-left: 1.5em;
+}

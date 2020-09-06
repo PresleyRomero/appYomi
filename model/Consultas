@@ -1,0 +1,2 @@
+//
+SELECT p.idpelicula, p.nombre, p.frase, p.descripcion, a.idactor, a.nombres FROM pelicula p INNER JOIN peli_actor pa ON pa.idpelicula=p.idpelicula INNER JOIN actor a on a.idactor=pa.idactor ORDER BY p.idpelicula desc

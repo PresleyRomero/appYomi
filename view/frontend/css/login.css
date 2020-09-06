@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../img/city.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family:  sans-serif;    
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    background: white;
+}
+
+.loginbox{
+    width: 320px;
+    height: 430px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="button"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #db668d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="button"]:hover{
+    cursor: pointer;
+    background: #fea75e;
+    color: #000;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover{
+    color: #ffc107;
+}
+
+.message{
+    border: none;
+    outline: none;
+    height: 18px;
+    margin-top: 10px;
+    padding: 10px;
+    background: #923030;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+}
+
+.message-lg{
+    height: 50px;    
+}
+
+.message-success{
+    background: rgb(58, 171, 77);
+}
