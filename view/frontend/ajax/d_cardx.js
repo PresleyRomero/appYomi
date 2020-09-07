@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('select').formSelect();      
-    $('.modal').modal();        
+    $('.modal').modal();  
     // $('.collapsible').collapsible();
     // $('.fixed-action-btn').floatingActionButton({direction: 'left'});
     // $('.tooltipped').tooltip();
@@ -224,6 +224,7 @@ $('#btnactualizarImg').on('click',function(){ //Cambiar Imagen de la pelicula
                     $('#chkacepto2').click(); //Deschequeo
                     $('#cbcategoria').change(); //Recargar cards
                 }else{
+                    console.log(resultado);
                     M.toast({html: ':( No se pudo modificar:<br> '+resultado, classes:'red'});
                 }            
             }

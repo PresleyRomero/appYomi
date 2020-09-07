@@ -8,7 +8,9 @@
             <div class="col s12 m4 l3">
               <div class="card ">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="frontend/img/uploads-img-cards/<?php echo $lstpelis[$i]['route_img']; ?>">
+                <!-- <div class="card-image "> -->
+                  <!-- <img class="activator" src="frontend/img/uploads-img-cards/<?php echo $lstpelis[$i]['route_img']; ?>"> -->
+                  <img class="materialboxed" src="frontend/img/uploads-img-cards/<?php echo $lstpelis[$i]['route_img']; ?>">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4"><?php echo($lstpelis[$i]["nombre"]); ?><i class="material-icons right">more_vert</i></span>
@@ -43,10 +45,13 @@
             </div>
 <?php     } ?> 
 
+          <img class="materialboxed" width="350" src="https://materializecss.com/images/sample-1.jpg">
+
 
 
 <script>
   $(document).ready(function(){
     $('.tabs').tabs();
+    $('.materialboxed').materialbox(); 
   });
 </script>
