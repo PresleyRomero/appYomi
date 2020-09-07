@@ -97,7 +97,7 @@
 
 		public function listarPelis($idcat){
 			try{
-				$sql="SELECT p.idpelicula, p.nombre, p.frase, p.descripcion, p.route_img, GROUP_CONCAT(a.nombres SEPARATOR '?') actores FROM pelicula p INNER JOIN peli_actor pa ON pa.idpelicula=p.idpelicula INNER JOIN actor a on a.idactor=pa.idactor WHERE p.idcategoria=$idcat GROUP BY p.idpelicula ORDER BY p.idpelicula desc";
+				$sql="SELECT p.idpelicula, p.nombre, p.frase, p.descripcion, p.route_img, GROUP_CONCAT(a.nombres ORDER BY a.nombres ASC) actores FROM pelicula p INNER JOIN peli_actor pa ON pa.idpelicula=p.idpelicula INNER JOIN actor a on a.idactor=pa.idactor WHERE p.idcategoria=$idcat GROUP BY p.idpelicula ORDER BY p.idpelicula desc";
 				$rs=$this->conn->query($sql);
 				$lst=$rs->fetchAll(PDO::FETCH_ASSOC);
 				return $lst;				

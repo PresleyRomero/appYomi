@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     $('#btnregistrar').on('click',function(){ //Registrar datos de la pelicula
         var aux=true;     
-        if ($('#txtnombre').val()=="" || $('#txtfrase').val()=="" || $('#txtdescripcion').val()=="" ) { M.toast({html: '¡Complete los campos obligatorios (*)!', classes:'red'}); aux=false;}
+        if ($('#txtnombre').val()=="" || $('#txtfrase').val()=="" ) { M.toast({html: '¡Complete los campos obligatorios (*)!', classes:'red'}); aux=false;}
         else{
             if (($('#cbactores').val()).length==0) { M.toast({html: '¡Seleccione por lo menos un actor!', classes:'red'}); aux=false;}
             if ($('#fileimg').prop('files')[0]==null) { M.toast({html: '¡Por favor, suba una imagen!', classes:'red'}); aux=false;}

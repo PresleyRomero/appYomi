@@ -2,5 +2,6 @@ DB_Heroku:
 mysql://b8062343aa0f5c:60053bd6@us-cdbr-east-02.cleardb.com/heroku_abca74d50ab8b3d?
 
 host: us-cdbr-east-02.cleardb.com
+db: heroku_abca74d50ab8b3d
 @: b8062343aa0f5c
 #: 60053bd6

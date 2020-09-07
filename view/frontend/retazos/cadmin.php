@@ -35,12 +35,12 @@
               </div>
               <a href="#user"><img class="circle" src="frontend/img/perfil-karen5.jpg"></a>
               <a href="#name"><span class="white-text name">KAREN YOMIRA ROMERO</span></a>
-              <a href="#email"><span class="white-text email">presleyromero11@gmail.com</span></a>
+              <a href="#email"><span class="white-text email">kyomira08@gmail.com</span></a>
             </div>
         </li>     
         <li><a href="#"><i class="material-icons">person</i>Perfil</a></li>
         <li><a href="d_newpeli.php"><i class="material-icons">book</i>Nuevo Registro</a></li>
-        <li><a href="d_cards.php"><i class="material-icons">assignment</i>Lista de Películas</a></li>
+        <li><a href="d_cards.php"><i class="material-icons">assignment</i>Lista de Productos</a></li>
         <li class="divider" tabindex="-1"></li>
         <li class="no-padding">
           <ul class="collapsible collapsible-accordion">

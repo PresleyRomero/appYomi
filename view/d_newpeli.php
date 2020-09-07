@@ -31,28 +31,28 @@
 			                            <label for="txtnombre">NOMBRE *</label>
 			                        </div>                
 			                    </div>
-			                    <div class="row">			                        
+			                    <div class="row" hidden>			                        
 			                        <div class="input-field col s12">                                
-			                            <input type="text" id="txtfrase" name="txtfrase" value="">                            
+			                            <input type="text" id="txtfrase" name="txtfrase" value="frase">                            
 			                            <label for="txtfrase">FRASE *</label>
 			                        </div>                        
 			                    </div>  
 			                    <div class="row">			                        
 			                        <div class="input-field col s12">                                
 			                            <textarea id="txtdescripcion" name="txtdescripcion" class="materialize-textarea"></textarea>                          
-			                            <label for="txtdescripcion">DESCRIPCIÓN *</label>
+			                            <label for="txtdescripcion">DESCRIPCIÓN </label>
 			                        </div>                        
 			                    </div>
 			                    <div class="row">
 				                    <div class="input-field col s12">
 				                        <select multiple id="cbactores" name="cbactores[]">
-				                          <option value="" disabled selected>Elige actores principales</option>
+				                          <option value="" disabled selected>Elige tallas</option>
 				                          <?php 
 					                      for ($i=0; $i < count($lstactores); $i++) {  ?>
 					                        <option value="<?php echo($lstactores[$i]['idactor']) ?>"><?php echo($lstactores[$i]['nombres']) ?></option>
 					                      <?php }?>
 				                        </select>
-				                        <label>ACTORES *</label>
+				                        <label>TALLAS *</label>
 				                    </div>
 				                </div>
 				                <div class="row">
@@ -75,7 +75,7 @@
 			                    </div>
 			                    <div class="row">			                        
 			                        <div class="input-field col s12">                                
-                                		<button type="button" id="btnregistrar" class="btn">Registrar Película</button>
+                                		<button type="button" id="btnregistrar" class="btn">Registrar </button>
 			                        </div>                        
 			                    </div>
                             </form>
