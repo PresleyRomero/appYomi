@@ -19,8 +19,8 @@
 	<main  class=" main-admin grey lighten-4">
 		<div class="container">
 			<div class="row">				
-	            <div class="col s12 m6 l6 offset-l3 div-enmarcado">
-                    <h5 class="center">NUEVA PELÍCULA</h5>
+	            <div class="col s12 l6 offset-l3 div-enmarcado">
+                    <h5 class="center">NUEVO PRODUCTO</h5>
                     <div class="row container">
                         <div class="col s12">
                             <form onsubmit="return false" id="form-datospeli" method="post" enctype="multipart/form-data" class="form-tight">
@@ -28,7 +28,7 @@
                             	<div class="row">			                        
 			                        <div class="input-field col s12">                                
 			                            <input type="text" id="txtnombre" name="txtnombre" value="" autofocus="" required="">  
-			                            <label for="txtnombre">TÍTULO DE LA PELÍCULA *</label>
+			                            <label for="txtnombre">NOMBRE *</label>
 			                        </div>                
 			                    </div>
 			                    <div class="row">			                        
