@@ -21,8 +21,7 @@
 	<?php include ("frontend/retazos/header-cards.php"); ?>
 
 	<main class="grey lighten-4">
-		<div class="container">
-        <!-- <h4 class="center">ESTRENOS - PELÍCULAS - DORAMAS </h4> -->
+		<div class="container">        
         <li class="divider" tabindex="-1"></li>
         <div class="row" id="div-cards-pelis">        
           <!-- Una vez cargado toda esta pagina, cargan los cards de la pagina cards-reload.php -->

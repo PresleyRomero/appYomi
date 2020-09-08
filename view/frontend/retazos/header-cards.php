@@ -4,7 +4,7 @@
 
 <header id="header" class="">
     <div class="navbar-fixed">
-      <nav class="navegation grey lighten-2"  style="padding: 0 2em">
+      <nav class="navegation grey lighten-2" >
         <div class="nav-wrapper"> 
           <ul class="left">
             <li><span class="purple-text text-darken-2"><strong>CATEGORÍA: </strong></span></li>
