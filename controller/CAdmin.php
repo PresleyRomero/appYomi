@@ -49,7 +49,7 @@ if (isset($_POST['op'])) {
 		   		}else if($tamanio_img < 2500000){		
 		   			if ($tipo_img=="image/jpeg" || $tipo_img=="image/jpg" || $tipo_img=="image/png" || $tipo_img=="image/gif") {
 		   				//Ruta de la carpeta destino en servidor
-		   				$carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/myapps/appYomi/view/frontend/img/uploads-img-cards/';
+		   				$carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/view/frontend/img/uploads-img-cards/';
 		   				//Movemos la imagen del directorio tmp al directorio escogido
 		   				move_uploaded_file($_FILES['fileimg']['tmp_name'], $carpeta_destino.$nombre_img);
 		   				//Ejecutamos Registro
@@ -83,9 +83,11 @@ if (isset($_POST['op'])) {
 	    		$tipo_img=$_FILES['fileimg']['type'];
 	    		$tamanio_img=$_FILES['fileimg']['size'];
 
-	    		if ($tamanio_img < 1000) {
-	    			echo ":( Tamaño de archivo no permitido";
-	    		}else if($tamanio_img < 2500000){		
+	    		// if ($tamanio_img < 1000) {
+	    		// 	echo ":( Tamaño de archivo no permitido";
+	    		// }else 
+
+	    		if($tamanio_img < 2500000){		
 	    			if ($tipo_img=="image/jpeg" || $tipo_img=="image/jpg" || $tipo_img=="image/png" || $tipo_img=="image/gif") {
 	    				//Ruta de la carpeta destino en servidor
 	    				$carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/view/frontend/img/uploads-img-cards/';
