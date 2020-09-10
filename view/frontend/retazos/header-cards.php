@@ -19,9 +19,9 @@
           </ul>
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li class="alerta">
+            <!-- <li class="alerta">
               <a href="#" class="link" ><i class="material-icons" style="color: #333333">notifications</i><span class="new badge">0</span></a>
-            </li>
+            </li> -->
             <li>
               <a class='dropdown-trigger' data-target='dropdown1' >
                 <span class="avatar-status">
@@ -31,7 +31,7 @@
               <ul id='dropdown1' class='dropdown-content'>
                 <li><a href="login.php">ADMIN</a></li>
                 <li class="divider" tabindex="-1"></li>
-                <li><a href="close_session.php">Cerrar Sesión</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
               </ul>
             </li>
           </ul>

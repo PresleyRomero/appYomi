@@ -39,8 +39,8 @@ $('#cbcategoria').on('change',function(){
                               <span class="card-title grey-text text-darken-4">${lst[i]["nombre"]}<i class="material-icons right">expand_more</i></span>
                               <div class="card-tabs">
                                 <ul class="tabs tabs-fixed-width">
-                                  <li class="tab"><a href="#desc-${lst[i]["idpelicula"]}">Descripción</a></li>
-                                  <li class="tab"><a class="active" href="#pers-${lst[i]["idpelicula"]}">Actores</a></li>
+                                  <li class="tab"><a href="#desc-${lst[i]["idpelicula"]}">Stock</a></li>
+                                  <li class="tab"><a class="active" href="#pers-${lst[i]["idpelicula"]}">Tallas</a></li>
                                   <li class="tab"><a href="#mas-${lst[i]["idpelicula"]}">Más</a></li>
                                 </ul>
                               </div>

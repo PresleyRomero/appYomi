@@ -48,10 +48,10 @@
                         <div class="row">                             
                             <div class="input-field col s12">                                
                                 <input type="text" id="txtnombre" name="txtnombre" value="" autofocus="" required="">  
-                                <label for="txtnombre">TÍTULO DE LA PELÍCULA *</label>
+                                <label for="txtnombre">NOMBRE DEL PRODUCTO *</label>
                             </div>                        
                         </div>
-                        <div class="row">                             
+                        <div class="row" hidden="">                             
                             <div class="input-field col s12">                                
                                 <input type="text" id="txtfrase" name="txtfrase" value="">                            
                                 <label for="txtfrase">FRASE *</label>
@@ -60,19 +60,19 @@
                         <div class="row">                             
                             <div class="input-field col s12">                                
                                 <textarea id="txtdescripcion" name="txtdescripcion" class="materialize-textarea"></textarea>                          
-                                <label for="txtdescripcion">DESCRIPCIÓN *</label>
+                                <label for="txtdescripcion">STOCK DESCRIPTIVO *</label>
                             </div>                        
                         </div>
                         <div class="row">
                           <div class="input-field col s12">
                               <select multiple id="cbactores" name="cbactores[]">
-                                <option value="0" disabled selected>Elige actores principales</option>
+                                <option value="0" disabled selected>Elige tallas</option>
                                 <?php                                
                                  for ($j=0; $j < count($lstactores); $j++) {  ?>
                                   <option value="<?php echo($lstactores[$j]['idactor']) ?>"><?php echo($lstactores[$j]['nombres']) ?></option>
                                 <?php }?>
                               </select>
-                              <label>ACTORES *</label>
+                              <label>TALLAS *</label>
                           </div>
                         </div>
                         <div class="row">
@@ -89,7 +89,7 @@
                         </div>                        
                         <div class="row foot-note">
                           <p >
-                            ¿Está seguro de modificar los datos de esta película?                                                
+                            ¿Está seguro de modificar los datos de este producto?                                                
                           </p>
                           <p><label><input type="checkbox" id="chkacepto" /><span>SEGURO</span></label></p>
                         </div>                  
@@ -129,7 +129,7 @@
                         </div>
                         <div class="row foot-note">
                           <p >
-                            ¿Está seguro de modificar la imagen de esta película?                                                
+                            ¿Está seguro de modificar la imagen de este producto?                                                
                           </p>
                           <p><label><input type="checkbox" id="chkacepto2" /><span>SEGURO</span></label></p>
                         </div>                  

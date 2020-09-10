@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('select').formSelect();
 	$('.dropdown-trigger').dropdown();
-	
+	$('.tap-target').tapTarget();
 	$('#cbcategoria').change();
 });
 

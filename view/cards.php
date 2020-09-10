@@ -36,8 +36,8 @@
     </div>    
     <div class="tap-target cyan" data-target="atencion">
       <div class="tap-target-content">
-        <h5>¡HOLA MUNDO! :)</h5>
-        <p> <strong></strong></p>
+        <h5>¡HOLA!</h5>
+        <p> <strong>Bienvenid@ a tu catálogo virtual de #ModaVerano2020. <br> Realiza tu pedido al wa: 994427382. <br>Encantadísimos de atenderte!! ;) </strong></p>
       </div>
     </div>
     

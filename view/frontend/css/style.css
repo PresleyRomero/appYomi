@@ -227,7 +227,10 @@ td button .material-icons{
 .card-reveal ul{
   overflow: hidden;
 }
-
+.card .card-content {
+  padding: .5em;
+}
+/*
 .card{
   height: 22em;
 }
@@ -242,7 +245,7 @@ td button .material-icons{
 
 .card .card-image img{
   height: 100%;
-}
+}*/
 
 .div-enmarcado{
   /*margin-right: 1em;
@@ -269,8 +272,9 @@ td button .material-icons{
 }
 
 .card .card-title{
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 450;
+  margin-bottom: 2px;
 }
 
 .navegation{
