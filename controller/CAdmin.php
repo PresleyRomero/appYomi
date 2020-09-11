@@ -79,13 +79,40 @@ if (isset($_POST['op'])) {
 	    		break;
 
 			case 'modificarImgPeli':
+				function compressImage($source, $destination, $quality) { 
+				    // Obtenemos la información de la imagen
+				    $imgInfo = getimagesize($source); 
+				    $mime = $imgInfo['mime']; 
+				     
+				    // Creamos una imagen
+				    switch($mime){ 
+				        case 'image/jpeg': 
+				            $image = imagecreatefromjpeg($source); 
+				            break; 
+				        case 'image/png': 
+				            $image = imagecreatefrompng($source); 
+				            break; 
+				        case 'image/gif': 
+				            $image = imagecreatefromgif($source); 
+				            break; 
+				        default: 
+				            $image = imagecreatefromjpeg($source); 
+				    } 
+				     
+				    // Guardamos la imagen en la ruta escogida
+				    imagejpeg($image, $destination, $quality); 
+				     
+				    // Devolvemos la imagen comprimida
+				    return $destination; 
+				}
+
 	    		$idpeli=$_POST['txtidpeli'];   
 	    		//Recibimos los datos de la imagen	
 	    		$nombre_img=$_FILES['fileimg']['name'];
 	    		$tipo_img=$_FILES['fileimg']['type'];
 	    		$tamanio_img=$_FILES['fileimg']['size'];
-	    		echo ($tipo_img);
-	    		echo ($tamanio_img);
+	    		// echo ($tipo_img);
+	    		// echo ($tamanio_img);
 
 	    		// if ($tamanio_img < 1000) {
 	    		// 	echo ":( Tamaño de archivo no permitido";
@@ -93,14 +120,28 @@ if (isset($_POST['op'])) {
 	    		// if($tamanio_img < 2500000){		
 	    		if($tamanio_img < 10500000){		
 	    			if ($tipo_img=="image/jpeg" || $tipo_img=="image/jpg" || $tipo_img=="image/png" || $tipo_img=="image/gif") {
-	    				//Ruta de la carpeta destino en servidor
-	    				$carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/view/frontend/img/uploads-img-cards/';
+	    				
+			            $imageTemp = $_FILES["fileimg"]["tmp_name"]; // Image temp source 	    				
+	    				// $carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/myapps/appYomi/view/frontend/img/uploads-img-cards/'; //Ruta de la carpeta destino en servidor
+	    				$carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/view/frontend/img/uploads-img-cards/'; //Ruta de la carpeta destino en servidor
+			             
+			            // Comprimimos la imagen
+			            $compressedImage = compressImage($imageTemp, $carpeta_destino.$nombre_img, 75); 
+			             
+			            if($compressedImage){ 
+			                // $status = 'success'; 
+			                // $statusMsg = "La imagen se ha subido satisfactoriamente."; 
+
+
 	    				//Movemos la imagen del directorio tmp al directorio escogido
-	    				move_uploaded_file($_FILES['fileimg']['tmp_name'], $carpeta_destino.$nombre_img);
+	    				// move_uploaded_file($_FILES['fileimg']['tmp_name'], $carpeta_destino.$nombre_img);
 	    				//Ejecutamos Registro
 	    				$mpeli=new MPeli(); 
 	    				$mpeli->modificarImgPeli($idpeli, $nombre_img);
 	    				echo "true";
+			            }else{ 
+			                echo "La compresión de la imagen ha fallado"; 
+			            } 
 	    			}else{
 	    				echo "Por favor, intente subir solo imágenes";
 	    			}
@@ -119,7 +160,12 @@ if (isset($_POST['op'])) {
     }catch(Throwable $ee){
         echo "CAPTURADO!!: ".$ee->getMessage().".<br> Archivo: ".$ee->getFile().". Linea: ".$ee->getLine();
     }
+// }
+
+
+ 
 }
+
 
 ?>
 

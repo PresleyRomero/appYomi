@@ -205,8 +205,9 @@ $('#chkacepto2').change(function(){ //Para modificar IMG de peli
 $('#btnactualizarImg').on('click',function(){ //Cambiar Imagen de la pelicula
     var aux=true;     
     if ($('#fileimg').prop('files')[0]==null) { M.toast({html: '¡Por favor, suba una imagen!', classes:'red'}); aux=false;} 
-
     if(aux){
+        $(this).prop('disabled', true);
+        $('#preloader-modimg').show();
         var formData = new FormData($("#form-imgpeli")[0]);
         $.ajax({        
             type: 'POST',   
@@ -215,6 +216,7 @@ $('#btnactualizarImg').on('click',function(){ //Cambiar Imagen de la pelicula
             contentType: false,
             processData: false,
             success: function(resultado) {  
+                $('#preloader-modimg').hide();
                 if ($.trim(resultado) == "true") {
                     M.toast({
                         html: '¡Éxito!. Imagen cambiada', 
