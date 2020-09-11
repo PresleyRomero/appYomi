@@ -111,6 +111,9 @@ if (isset($_POST['op'])) {
 	    		$nombre_img=$_FILES['fileimg']['name'];
 	    		$tipo_img=$_FILES['fileimg']['type'];
 	    		$tamanio_img=$_FILES['fileimg']['size'];
+	    		// $destino=$_SERVER['DOCUMENT_ROOT'] . '/myapps/appYomi/view/frontend/img/uploads-img-cards/' . $nombre_img; 
+	    		$destino=$_SERVER['DOCUMENT_ROOT'] . '/view/frontend/img/uploads-img-cards/' . $nombre_img; 
+        		$fileType = pathinfo($destino, PATHINFO_EXTENSION); 
 	    		// echo ($tipo_img);
 	    		// echo ($tamanio_img);
 
@@ -119,7 +122,8 @@ if (isset($_POST['op'])) {
 	    		// }else 
 	    		// if($tamanio_img < 2500000){		
 	    		if($tamanio_img < 10500000){		
-	    			if ($tipo_img=="image/jpeg" || $tipo_img=="image/jpg" || $tipo_img=="image/png" || $tipo_img=="image/gif") {
+	    			if ($fileType=="jpeg" || $fileType=="jpg" || $fileType=="png" || $fileType=="gif") {
+	    			// if ($tipo_img=="image/jpeg" || $tipo_img=="image/jpg" || $tipo_img=="image/png" || $tipo_img=="image/gif") {
 	    				
 			            $imageTemp = $_FILES["fileimg"]["tmp_name"]; // Image temp source 	    				
 	    				// $carpeta_destino=$_SERVER['DOCUMENT_ROOT'] . '/myapps/appYomi/view/frontend/img/uploads-img-cards/'; //Ruta de la carpeta destino en servidor
