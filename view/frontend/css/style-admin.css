@@ -52,9 +52,9 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .modal-medium {
+    /*.modal-medium {
         width: 70%;
-    }
+    }*/
     .modal-medium h4{
         font-variant: petite-caps;
     }

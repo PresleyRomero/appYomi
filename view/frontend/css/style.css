@@ -95,9 +95,9 @@ main {
   background: white;
 }
 
-.modal-medium{
+/*.modal-medium{
   width: 35%; 
-}
+}*/
 
 .form-tight .row{
   margin-bottom: 2px; 
@@ -211,7 +211,7 @@ td button .material-icons{
         margin-left: 89%;
      }     
      .modal-medium{
-        width: 80%; 
+        width: 90% !important; 
      }
 }
 

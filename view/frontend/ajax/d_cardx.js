@@ -1,9 +1,6 @@
 $(document).ready(function(){
     $('select').formSelect();      
-    $('.modal').modal();  
-    // $('.collapsible').collapsible();
-    // $('.fixed-action-btn').floatingActionButton({direction: 'left'});
-    // $('.tooltipped').tooltip();
+    $('.modal').modal();     
     $('.sidenav').sidenav(); 
 
     $('#cbcategoria').change();
@@ -75,42 +72,6 @@ $('#cbcategoria').on('change',function(){
 });
 
     
-
-
-    // $('#btnregistrar').on('click',function(){ //Registrar datos personales Alumno   
-    //     var aux=true;     
-    //     if ($('#txtnombre').val()=="" || $('#txtfrase').val()=="" || $('#txtdescripcion').val()=="" ) { M.toast({html: '¡Complete los campos obligatorios (*)!', classes:'red'}); aux=false;}
-    //     else{
-    //         if (($('#cbactores').val()).length==0) { M.toast({html: '¡Seleccione por lo menos un actor!', classes:'red'}); aux=false;}
-    //         if ($('#fileimg').prop('files')[0]==null) { M.toast({html: '¡Por favor, suba una imagen!', classes:'red'}); aux=false;}
-    //     }        
-    //     if(aux){
-    //         var formData = new FormData($("#form-datospeli")[0]);
-    //         $.ajax({        
-    //             type: 'POST',   
-    //             url: '../controller/CImagen.php',
-    //             data: formData,
-    //             contentType: false,
-    //             processData: false,
-    //             success: function(resultado) {     
-    //                 if ($.trim(resultado) == "true") {
-    //                     console.log(resultado);
-    //                     M.toast({
-    //                         html: '¡Éxito!. Datos Registrados', 
-    //                         classes:'green', 
-    //                         displayLength:2000
-    //                     });
-    //                     $('#form-datospeli input, #form-datospeli textarea').val("");
-    //                 }else{
-    //                     M.toast({html: ':( No se pudo registrar:<br> '+resultado, classes:'red'});
-    //                 }            
-    //             }
-    //         });
-    //     }
-    // });
-
-    // console.log( $('.btnmodificar').data('options').datos);
-
 
 function cargarDatos(idbtn){ //Para modificar DATOS de peli
     var idpeli = idbtn.split("-")[1];
@@ -228,6 +189,7 @@ $('#btnactualizarImg').on('click',function(){ //Cambiar Imagen de la pelicula
                 }else{
                     console.log(resultado);
                     M.toast({html: ':( No se pudo modificar:<br> '+resultado, classes:'red'});
+                    $('#chkacepto2').click(); //Deschequeo
                 }            
             }
         });

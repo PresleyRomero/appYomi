@@ -107,8 +107,6 @@
                       </form>
                   </div>                        
               </div> 
-                  
-              <!-- </form>               -->
           </div>
       </div>
 
@@ -135,7 +133,6 @@
                         </div>                  
                         <div class="row right">
                             <div class="col s12">
-                                <!-- <button type="button" id="btnactualizardp" class="btn waves-effect waves-red red darken-4" disabled="">Actualizar</button><br> -->
                                 <button type="button" id="btnactualizarImg" class="btn waves-effect" disabled>Actualizar</button>
                                 <div id="preloader-modimg" hidden> 
                                   <div class="progress">
