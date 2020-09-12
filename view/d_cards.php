@@ -149,7 +149,6 @@
 
 	<script  src="frontend/js/jquery.min.js"></script>
 	<script  src="frontend/js/materialize.min.js"></script>
-  <script src="frontend/ajax/d_reportsx.js"></script>        
   <script src="frontend/ajax/cab-adminx.js"></script>        
 	<script src="frontend/ajax/d_cardx.js"></script>        
 
