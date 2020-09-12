@@ -15,7 +15,7 @@
 
 		public function listarActores(){
 			try{
-				$sql="select * from actor order by nombres";
+				$sql="select * from actor order by idactor";
 				$rs=$this->conn->query($sql);
 				$lst=$rs->fetchAll(PDO::FETCH_ASSOC);
 				return $lst;				
