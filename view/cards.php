@@ -7,11 +7,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Perfil</title>
+	<title>Moda Verano 2020</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- <link rel="stylesheet" type="text/css" href="frontend/css/materialize.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="icon" type="image/png" href="frontend/img/exito-icon-r.png">
+    <link rel="stylesheet" type="text/css" href="frontend/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="frontend/img/font/iconos.css">    
   <link rel="stylesheet" type="text/css" href="frontend/css/style.css"> 
 	<link rel="stylesheet" type="text/css" href="frontend/css/style-admin.css"> 
@@ -44,9 +44,7 @@
   </main>
 
 	<script  src="frontend/js/jquery.min.js"></script>
-	<!-- <script  src="frontend/js/materialize.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- <script src="frontend/ajax/d_reportsx.js"></script>         -->
+	<script  src="frontend/js/materialize.min.js"></script>
   <!-- <script src="frontend/ajax/cab-adminx.js"></script>         -->
 	<script src="frontend/ajax/cards-x.js"></script>        
 

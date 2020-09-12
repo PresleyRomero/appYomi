@@ -6,10 +6,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lista de Pelis</title>
+	<title>Moda Verano 2020 - admin</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="frontend/css/materialize.min.css">
+  <link rel="icon" type="image/png" href="frontend/img/exito-icon-r.png">
+  <link rel="stylesheet" type="text/css" href="frontend/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="frontend/img/font/iconos.css">    
   <link rel="stylesheet" type="text/css" href="frontend/css/style.css"> 
 	<link rel="stylesheet" type="text/css" href="frontend/css/style-admin.css"> 
